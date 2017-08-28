@@ -1,0 +1,47 @@
+
+CLICK = 'click'
+VIEW = 'view'
+SCANCODE_PUSH = 'scancode_push'
+SCANCODE_WAITMSG = 'scancode_waitmsg'
+PIC_SYSPHOTO = 'pic_sysphoto'
+PIC_PHOTO_OR_ALBUM = 'pic_photo_or_album'
+PIC_WEIXIN = 'pic_weixin'
+LOCATION_SELECT = 'location_select'
+MEDIA_ID = 'media_id'
+VIEW_LIMITED = 'view_limited'
+MINIPROGRAM = 'miniprogram'
+PARENT = None
+
+# 测试号
+WECHAT_TYPE_TEST = 0
+# 订阅号
+WECHAT_TYPE_SUB = 1
+# 升级后的订阅号
+WECHAT_TYPE_SUB2 = 2
+# 服务号
+WECHAT_TYPE_SERVICE = 3
+
+
+WECHAT_MENU_TYPE = (
+    (PARENT, PARENT),
+    (CLICK, CLICK),
+    (VIEW, VIEW),
+    (SCANCODE_PUSH, SCANCODE_PUSH),
+    (SCANCODE_WAITMSG, SCANCODE_WAITMSG),
+    (PIC_SYSPHOTO, PIC_SYSPHOTO),
+    (PIC_PHOTO_OR_ALBUM, PIC_PHOTO_OR_ALBUM),
+    (PIC_WEIXIN, PIC_WEIXIN),
+    (LOCATION_SELECT, LOCATION_SELECT),
+    (MEDIA_ID, MEDIA_ID),
+    (VIEW_LIMITED, VIEW_LIMITED),
+    (MINIPROGRAM, MINIPROGRAM)
+)
+
+
+WECHAT_TYPE_CHOICES = (
+    (WECHAT_TYPE_TEST, '测试号'),
+    (WECHAT_TYPE_SUB, '订阅号'),
+    (WECHAT_TYPE_SUB2, '升级后的订阅号'),
+    (WECHAT_TYPE_SERVICE, '服务号'),
+)
+

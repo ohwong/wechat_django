@@ -1,0 +1,7 @@
+# include LICENSE
+recursive-include */locale *
+recursive-include */static *
+recursive-include */templates *
+recursive-include */management *
+recursive-include */fixtures *
+recursive-include */restful *
