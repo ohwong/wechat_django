@@ -20,6 +20,11 @@ class WechatUser(models.Model):
     privilege = JSONField()
     # ForeignKey `wechat_django.Wechat`
     wechat_appid = models.CharField(max_length=18)
+    subscribe_time = models.BigIntegerField()
+    subscribe = models.IntegerField(default=True)
+    groupid = models.IntegerField(default=0)
+    # 备注
+    remark = models.CharField(max_length=64)
 
     def __str__(self):
         return self.openid

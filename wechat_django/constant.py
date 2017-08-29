@@ -45,3 +45,6 @@ WECHAT_TYPE_CHOICES = (
     (WECHAT_TYPE_SERVICE, '服务号'),
 )
 
+
+# session 过期时间
+SESSION_EXPIRED_SECONDS = 3600 * 24 * 7
